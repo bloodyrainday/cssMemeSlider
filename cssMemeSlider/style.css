@@ -1,0 +1,52 @@
+body {
+    margin: 0 auto;
+    background-color: rgb(169, 169, 169);
+}
+
+.wrapper  {
+    
+}
+
+.slider {
+    border: 2px solid black;
+    max-width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.slider-line-images {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    transition: all ease 0.5s;
+}
+
+.slider-line-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.captions-buttons-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.switch-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.switch-button-wrapper {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.switch-button {
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
