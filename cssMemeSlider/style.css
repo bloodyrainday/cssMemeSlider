@@ -50,3 +50,14 @@ body {
     border-radius: 10px;
     cursor: pointer;
 }
+
+.slider-text {
+    width: 50%;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+.slider-line-text {
+    display: flex;
+    transition: all ease 0.5s;
+}

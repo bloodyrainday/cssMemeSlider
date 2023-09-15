@@ -1,5 +1,7 @@
 const images = document.querySelectorAll('.slider-line-image');
+const captions = document.querySelectorAll('.slider-line-caption');
 const sliderLineImages = document.querySelector('.slider-line-images');
+const sliderLineText = document.querySelector('.slider-line-text');
 const switchButton1 = document.getElementById('image-1');
 const switchButton2 = document.getElementById('image-2');
 const switchButton3 = document.getElementById('image-3');
@@ -9,6 +11,7 @@ const switchButton6 = document.getElementById('image-6');
 const switchButton7 = document.getElementById('image-7');
 let count = 0;
 let width;
+let widthText;
 
 function init() {
     console.log('resize');
@@ -22,8 +25,22 @@ function init() {
     switchSlider()
 }
 
-window.addEventListener('resize', init)
-init()
+function initText() {
+    widthText = document.querySelector('.slider-text').offsetWidth;
+    sliderLineText.style.width = widthText * captions.length + 'px';
+    captions.forEach(item => {
+        item.style.width = widthText + 'px';
+        item.style.height = 'auto';
+    })
+    
+    switchSlider()
+}
+
+window.addEventListener('resize', init);
+window.addEventListener('resize', initText);
+
+init();
+initText();
 
 switchButton1.addEventListener('click', () => {
     count--;
@@ -90,4 +107,5 @@ switchButton7.addEventListener('click', () => {
 
 function switchSlider() {
     sliderLineImages.style.transform = 'translate(-' + count * width + 'px)';
+    sliderLineText.style.transform = 'translate(-' + count * widthText + 'px)';
 }
