@@ -5,19 +5,22 @@ body {
 
 .wrapper  {
     
+    
 }
 
 .slider {
-    border: 2px solid black;
-    max-width: 80%;
-    margin: 20px auto;
+    max-width: 75%;
+    margin: 1.5em auto;
     overflow: hidden;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    gap: 0.8em;
 }
 
 .slider-line-images {
-    width: 400px;
-    height: 400px;
     display: flex;
+    height: 40rem;
     transition: all ease 0.5s;
 }
 
@@ -30,34 +33,64 @@ body {
 .captions-buttons-wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .switch-buttons {
     display: flex;
-    gap: 10px;
+    gap: 0.8em;
 }
 
 .switch-button-wrapper {
-    width: 20px;
-    height: 20px;
+    width: 1.2em;
+    height: 1.2em;
     text-align: center;
     cursor: pointer;
 }
 
 .switch-button {
-    width: 15px;
-    height: 15px;
-    border-radius: 10px;
+    width: 1.1em;
+    height: 1.1em;
+    border-radius: 1.2em;
     cursor: pointer;
 }
 
 .slider-text {
     width: 50%;
-    border: 2px solid black;
     overflow: hidden;
 }
 
 .slider-line-text {
     display: flex;
+    align-items: center;
     transition: all ease 0.5s;
+}
+
+.slider-line-caption {
+    font-family: 'Puppins', sans-serif;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.active {
+    background-color: orange;
+    border: 2px solid red;
+}
+
+@media (max-width: 540px) {
+    
+    .captions-buttons-wrapper {
+        flex-direction:column-reverse;
+        text-align: center;
+        gap: 1.1rem;   
+    }
+
+    .slider-line-image {
+        object-fit: contain;
+        border-radius: 1.2rem;
+    }
+
+    .slider-line-images {
+        height: 18rem;
+    }
 }

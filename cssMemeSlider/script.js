@@ -44,8 +44,15 @@ initText();
 
 switchButton1.addEventListener('click', () => {
     count--;
+    document.getElementById('button-1').classList.add('active');
+    document.getElementById('button-2').classList.remove('active');
+    document.getElementById('button-3').classList.remove('active');
+    document.getElementById('button-4').classList.remove('active');
+    document.getElementById('button-5').classList.remove('active');
+    document.getElementById('button-6').classList.remove('active');
+    document.getElementById('button-7').classList.remove('active');
     if (count > 0 || count < 0) {
-        count = 0
+        count = 0;
     }
     
     switchSlider();
@@ -53,6 +60,13 @@ switchButton1.addEventListener('click', () => {
 
 switchButton2.addEventListener('click', () => {
     count++;
+    document.getElementById('button-2').classList.add('active');
+    document.getElementById('button-1').classList.remove('active');
+    document.getElementById('button-3').classList.remove('active');
+    document.getElementById('button-4').classList.remove('active');
+    document.getElementById('button-5').classList.remove('active');
+    document.getElementById('button-6').classList.remove('active');
+    document.getElementById('button-7').classList.remove('active');
     if (count > 1 || count < 1) {
         count = 1
     };
@@ -62,6 +76,13 @@ switchButton2.addEventListener('click', () => {
 
 switchButton3.addEventListener('click', () => {
     count++;
+    document.getElementById('button-3').classList.add('active');
+    document.getElementById('button-1').classList.remove('active');
+    document.getElementById('button-2').classList.remove('active');
+    document.getElementById('button-4').classList.remove('active');
+    document.getElementById('button-5').classList.remove('active');
+    document.getElementById('button-6').classList.remove('active');
+    document.getElementById('button-7').classList.remove('active');
     if (count > 2 || count < 2) {
         count = 2
     };
@@ -71,6 +92,13 @@ switchButton3.addEventListener('click', () => {
 
 switchButton4.addEventListener('click', () => {
     count++;
+    document.getElementById('button-4').classList.add('active');
+    document.getElementById('button-1').classList.remove('active');
+    document.getElementById('button-2').classList.remove('active');
+    document.getElementById('button-3').classList.remove('active');
+    document.getElementById('button-5').classList.remove('active');
+    document.getElementById('button-6').classList.remove('active');
+    document.getElementById('button-7').classList.remove('active');
     if (count > 3 || count < 3) {
         count = 3
     };
@@ -80,6 +108,13 @@ switchButton4.addEventListener('click', () => {
 
 switchButton5.addEventListener('click', () => {
     count++;
+    document.getElementById('button-5').classList.add('active');
+    document.getElementById('button-1').classList.remove('active');
+    document.getElementById('button-2').classList.remove('active');
+    document.getElementById('button-3').classList.remove('active');
+    document.getElementById('button-4').classList.remove('active');
+    document.getElementById('button-6').classList.remove('active');
+    document.getElementById('button-7').classList.remove('active');
     if (count > 4 || count < 4) {
         count = 4
     };
@@ -89,6 +124,13 @@ switchButton5.addEventListener('click', () => {
 
 switchButton6.addEventListener('click', () => {
     count++;
+    document.getElementById('button-6').classList.add('active');
+    document.getElementById('button-1').classList.remove('active');
+    document.getElementById('button-2').classList.remove('active');
+    document.getElementById('button-3').classList.remove('active');
+    document.getElementById('button-4').classList.remove('active');
+    document.getElementById('button-5').classList.remove('active');
+    document.getElementById('button-7').classList.remove('active');
     if (count > 5 || count < 5) {
         count = 5
     };
@@ -98,6 +140,13 @@ switchButton6.addEventListener('click', () => {
 
 switchButton7.addEventListener('click', () => {
     count++;
+    document.getElementById('button-7').classList.add('active');
+    document.getElementById('button-1').classList.remove('active');
+    document.getElementById('button-2').classList.remove('active');
+    document.getElementById('button-3').classList.remove('active');
+    document.getElementById('button-4').classList.remove('active');
+    document.getElementById('button-5').classList.remove('active');
+    document.getElementById('button-6').classList.remove('active');
     if (count > 6 || count < 6) {
         count = 6
     };
