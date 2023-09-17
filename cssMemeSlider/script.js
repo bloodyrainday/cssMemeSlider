@@ -42,7 +42,104 @@ window.addEventListener('resize', initText);
 init();
 initText();
 
+/* hover on swicth buttons */
+
+switchButton1.addEventListener('mouseover', () => {
+    document.getElementById('button-1').style.backgroundColor = 'red'
+})
+
+switchButton1.addEventListener('mouseout', () => {
+    if (!document.getElementById('button-1').classList.contains('active')) {
+        document.getElementById('button-1').style.backgroundColor = 'white'
+    } else {
+        document.getElementById('button-1').style.backgroundColor = 'rgb(145, 143, 143)'
+    }
+    
+})
+
+switchButton2.addEventListener('mouseover', () => {
+    document.getElementById('button-2').style.backgroundColor = 'red'
+})
+
+switchButton2.addEventListener('mouseout', () => {
+    if (!document.getElementById('button-2').classList.contains('active')) {
+        document.getElementById('button-2').style.backgroundColor = 'white'
+    } else {
+        document.getElementById('button-2').style.backgroundColor = 'rgb(145, 143, 143)'
+    }
+    
+})
+
+switchButton3.addEventListener('mouseover', () => {
+    document.getElementById('button-3').style.backgroundColor = 'red'
+})
+
+switchButton3.addEventListener('mouseout', () => {
+    if (!document.getElementById('button-3').classList.contains('active')) {
+        document.getElementById('button-3').style.backgroundColor = 'white'
+    } else {
+        document.getElementById('button-3').style.backgroundColor = 'rgb(145, 143, 143)'
+    }
+    
+})
+
+switchButton4.addEventListener('mouseover', () => {
+    document.getElementById('button-4').style.backgroundColor = 'red'
+})
+
+switchButton4.addEventListener('mouseout', () => {
+    if (!document.getElementById('button-4').classList.contains('active')) {
+        document.getElementById('button-4').style.backgroundColor = 'white'
+    } else {
+        document.getElementById('button-4').style.backgroundColor = 'rgb(145, 143, 143)'
+    }
+    
+})
+
+switchButton5.addEventListener('mouseover', () => {
+    document.getElementById('button-5').style.backgroundColor = 'red'
+})
+
+switchButton5.addEventListener('mouseout', () => {
+    if (!document.getElementById('button-5').classList.contains('active')) {
+        document.getElementById('button-5').style.backgroundColor = 'white'
+    } else {
+        document.getElementById('button-5').style.backgroundColor = 'rgb(145, 143, 143)'
+    }
+    
+})
+
+switchButton6.addEventListener('mouseover', () => {
+    document.getElementById('button-6').style.backgroundColor = 'red'
+})
+
+switchButton6.addEventListener('mouseout', () => {
+    if (!document.getElementById('button-6').classList.contains('active')) {
+        document.getElementById('button-6').style.backgroundColor = 'white'
+    } else {
+        document.getElementById('button-6').style.backgroundColor = 'rgb(145, 143, 143)'
+    }
+    
+})
+
+switchButton7.addEventListener('mouseover', () => {
+    document.getElementById('button-7').style.backgroundColor = 'red'
+})
+
+switchButton7.addEventListener('mouseout', () => {
+    if (!document.getElementById('button-7').classList.contains('active')) {
+        document.getElementById('button-7').style.backgroundColor = 'white'
+    } else {
+        document.getElementById('button-7').style.backgroundColor = 'rgb(145, 143, 143)'
+    }
+    
+})
+
+
+/* click on switch buttons */
+
 switchButton1.addEventListener('click', () => {
+
     count--;
     document.getElementById('button-1').classList.add('active');
     document.getElementById('button-2').classList.remove('active');
@@ -54,7 +151,12 @@ switchButton1.addEventListener('click', () => {
     if (count > 0 || count < 0) {
         count = 0;
     }
-    
+    document.getElementById('button-2').style.backgroundColor = 'white';
+    document.getElementById('button-3').style.backgroundColor = 'white';
+    document.getElementById('button-4').style.backgroundColor = 'white';
+    document.getElementById('button-5').style.backgroundColor = 'white';
+    document.getElementById('button-6').style.backgroundColor = 'white';
+    document.getElementById('button-7').style.backgroundColor = 'white';
     switchSlider();
 })
 
@@ -70,7 +172,12 @@ switchButton2.addEventListener('click', () => {
     if (count > 1 || count < 1) {
         count = 1
     };
-    
+    document.getElementById('button-1').style.backgroundColor = 'white';
+    document.getElementById('button-3').style.backgroundColor = 'white';
+    document.getElementById('button-4').style.backgroundColor = 'white';
+    document.getElementById('button-5').style.backgroundColor = 'white';
+    document.getElementById('button-6').style.backgroundColor = 'white';
+    document.getElementById('button-7').style.backgroundColor = 'white';
     switchSlider()
 })
 
@@ -86,7 +193,12 @@ switchButton3.addEventListener('click', () => {
     if (count > 2 || count < 2) {
         count = 2
     };
-    
+    document.getElementById('button-1').style.backgroundColor = 'white';
+    document.getElementById('button-2').style.backgroundColor = 'white';
+    document.getElementById('button-4').style.backgroundColor = 'white';
+    document.getElementById('button-5').style.backgroundColor = 'white';
+    document.getElementById('button-6').style.backgroundColor = 'white';
+    document.getElementById('button-7').style.backgroundColor = 'white';
     switchSlider()
 })
 
@@ -102,7 +214,12 @@ switchButton4.addEventListener('click', () => {
     if (count > 3 || count < 3) {
         count = 3
     };
-    
+    document.getElementById('button-1').style.backgroundColor = 'white';
+    document.getElementById('button-3').style.backgroundColor = 'white';
+    document.getElementById('button-2').style.backgroundColor = 'white';
+    document.getElementById('button-5').style.backgroundColor = 'white';
+    document.getElementById('button-6').style.backgroundColor = 'white';
+    document.getElementById('button-7').style.backgroundColor = 'white';
     switchSlider()
 })
 
@@ -118,7 +235,12 @@ switchButton5.addEventListener('click', () => {
     if (count > 4 || count < 4) {
         count = 4
     };
-    
+    document.getElementById('button-1').style.backgroundColor = 'white';
+    document.getElementById('button-3').style.backgroundColor = 'white';
+    document.getElementById('button-4').style.backgroundColor = 'white';
+    document.getElementById('button-2').style.backgroundColor = 'white';
+    document.getElementById('button-6').style.backgroundColor = 'white';
+    document.getElementById('button-7').style.backgroundColor = 'white';
     switchSlider()
 })
 
@@ -134,7 +256,12 @@ switchButton6.addEventListener('click', () => {
     if (count > 5 || count < 5) {
         count = 5
     };
-    
+    document.getElementById('button-1').style.backgroundColor = 'white';
+    document.getElementById('button-3').style.backgroundColor = 'white';
+    document.getElementById('button-4').style.backgroundColor = 'white';
+    document.getElementById('button-5').style.backgroundColor = 'white';
+    document.getElementById('button-2').style.backgroundColor = 'white';
+    document.getElementById('button-7').style.backgroundColor = 'white';
     switchSlider()
 })
 
@@ -150,7 +277,12 @@ switchButton7.addEventListener('click', () => {
     if (count > 6 || count < 6) {
         count = 6
     };
-    
+    document.getElementById('button-1').style.backgroundColor = 'white';
+    document.getElementById('button-3').style.backgroundColor = 'white';
+    document.getElementById('button-4').style.backgroundColor = 'white';
+    document.getElementById('button-5').style.backgroundColor = 'white';
+    document.getElementById('button-6').style.backgroundColor = 'white';
+    document.getElementById('button-2').style.backgroundColor = 'white';
     switchSlider()
 })
 

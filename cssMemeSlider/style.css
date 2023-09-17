@@ -3,11 +3,6 @@ body {
     background-color: rgb(169, 169, 169);
 }
 
-.wrapper  {
-    
-    
-}
-
 .slider {
     max-width: 75%;
     margin: 1.5em auto;
@@ -42,8 +37,8 @@ body {
 }
 
 .switch-button-wrapper {
-    width: 1.2em;
-    height: 1.2em;
+    width: 1.4em;
+    height: 1.4em;
     text-align: center;
     cursor: pointer;
 }
