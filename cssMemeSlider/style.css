@@ -55,6 +55,10 @@ body {
     cursor: pointer;
 }
 
+.switch-button-wrapper .switch-button:hover {
+    background-color: rgb(169, 0, 0, 1.2);
+}
+
 .slider-text {
     width: 50%;
     overflow: hidden;
@@ -73,8 +77,8 @@ body {
 }
 
 .active {
-    background-color: orange;
-    border: 2px solid red;
+    background-color: rgb(145, 143, 143);
+    border: 2px solid rgb(79, 79, 79);
 }
 
 @media (max-width: 540px) {
